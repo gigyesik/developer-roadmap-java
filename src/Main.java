@@ -1,4 +1,4 @@
-public class Main {
+public class Main extends ab {
     public static void main(String[] args) {
         // Basic Syntax
         System.out.println("Hello world!");
@@ -96,5 +96,37 @@ public class Main {
         String numberIs = (three % 2 == 0) ? "even" : "odd";
         System.out.println(numberIs);
 
+        // Function
+        // static method
+        show();
+
+        // instance method
+        Main m = new Main();
+        m.findEvenOdd(5); // odd
+
+        // abstract method
+        m.abMethod();
     }
+
+    // instance method
+    public void findEvenOdd(int num){
+        if (num % 2 == 0) {
+            System.out.println("even");
+        } else {
+            System.out.println("odd");
+        }
+    }
+
+    static void show() {
+        System.out.println("Static Method");
+    }
+
+    void abMethod() {
+        System.out.println("abstract method");
+    }
+
+}
+
+abstract class ab {
+    abstract void abMethod();
 }
