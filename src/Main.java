@@ -1,19 +1,5 @@
 public class Main extends ab {
     public static void main(String[] args) {
-        // Basic Syntax
-        System.out.println("Hello world!");
-
-        // 한줄 주석
-
-        /*
-            여러줄
-            주석
-        /*
-
-        /**
-            문서형 주석
-        */
-
         // DataTypes, Variables
         // 타입, 변수명
         int a1, b1, c1;
