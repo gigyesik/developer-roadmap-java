@@ -1,16 +1,5 @@
-public class Main extends ab {
+public class Main {
     public static void main(String[] args) {
-        // Function
-        // static method
-        show();
-
-        // instance method
-        Main m = new Main();
-        m.findEvenOdd(5); // odd
-
-        // abstract method
-        m.abMethod();
-
         // Loop
         // for statement
         for(int i = 1; i <= 10; i++) {
@@ -68,25 +57,8 @@ public class Main extends ab {
 //        }
     }
 
-    // instance method
-    public void findEvenOdd(int num){
-        if (num % 2 == 0) {
-            System.out.println("even");
-        } else {
-            System.out.println("odd");
-        }
-    }
 
-    static void show() {
-        System.out.println("Static Method");
-    }
-
-    void abMethod() {
-        System.out.println("abstract method");
-    }
 
 }
 
-abstract class ab {
-    abstract void abMethod();
-}
+
