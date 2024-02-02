@@ -1,6 +1,6 @@
 package fundamental;
 
-public interface DevInterface2 {
+public interface Dev1Interface2 {
     void method3(int c);
     void method4(int d);
 

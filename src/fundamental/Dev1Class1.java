@@ -1,6 +1,7 @@
 package fundamental;
 
-public class DevClass3 implements DevInterface3 {
+public class Dev1Class1 implements Dev1Interface1, Dev1Interface2 {
+    // 메서드 구현
     @Override
     public void method1(int a) {
         System.out.println(a);
@@ -11,6 +12,7 @@ public class DevClass3 implements DevInterface3 {
         System.out.println(b);
     }
 
+    // 다중 상속
     @Override
     public void method3(int c) {
         System.out.println(c);
@@ -21,17 +23,13 @@ public class DevClass3 implements DevInterface3 {
         System.out.println(d);
     }
 
-    @Override
-    public void method7() {
-        System.out.println("method 7");
-    }
-
     public static void main(String[] args) {
-        DevClass3 dc3 = new DevClass3();
-        dc3.method1(1); // 1
-        dc3.method2(2); // 2
-        dc3.method3(3); // 3
-        dc3.method4(4); // 4
-        dc3.method7(); // method 7
+        Dev1Class1 dc1 = new Dev1Class1();
+        dc1.method1(1); // 1
+        dc1.method2(2); // 2
+        dc1.method3(3); // 3
+        dc1.method4(4); // 4
+        dc1.method5(); // default interface method
+        Dev1Interface2.method6(); // static method
     }
 }

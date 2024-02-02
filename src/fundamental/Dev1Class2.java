@@ -1,6 +1,6 @@
 package fundamental;
 
-public class DevClass2 implements DevInterface1 {
+public class Dev1Class2 implements Dev1Interface1 {
     // 다른 구현
     @Override
     public void method1(int a) {
@@ -13,7 +13,7 @@ public class DevClass2 implements DevInterface1 {
     }
 
     public static void main(String[] args) {
-        DevClass2 dc2 = new DevClass2();
+        Dev1Class2 dc2 = new Dev1Class2();
         dc2.method1(1); // 2
         dc2.method2(2); // 3
     }

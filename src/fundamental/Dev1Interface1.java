@@ -1,6 +1,6 @@
 package fundamental;
 
-public interface DevInterface1 {
+public interface Dev1Interface1 {
     int dev1 = 10;
 
     void method1(int a);
