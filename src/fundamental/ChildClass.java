@@ -11,13 +11,20 @@ public class ChildClass extends ParentClass {
         this.merge = merge;
     }
 
+    // 새로운 메서드
     public void merge(int code) {
         merge += code;
     }
 
+    // 오버라이딩
     @Override
     public String print() {
         return super.print() + " and now merge is " + merge;
+    }
+
+    // static 메서드는 오버라이딩 되는 것이 아니라 부모 method 가 hiding 됨
+    public static void deploy() {
+        System.out.println("deploy child");
     }
 
     // driver class method
@@ -29,5 +36,7 @@ public class ChildClass extends ParentClass {
         cc.merge(1);
         System.out.println(cc.print()); // now code is 10 and commit is 5 and now merge is 1
         System.out.println(cc.a + " " + cc.b); // 10 20
+        ParentClass.deploy(); // deploy parent
+        ChildClass.deploy(); // deploy child
     }
 }

@@ -21,6 +21,10 @@ public class ParentClass {
         commit += code;
     }
 
+    public static void deploy() {
+        System.out.println("deploy parent");
+    }
+
     public String print() {
         return "now code is " + code + " and commit is " + commit;
     }
