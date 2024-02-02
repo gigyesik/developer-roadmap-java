@@ -4,6 +4,8 @@ public class ParentClass {
     // 필드
     public int code;
     public int commit;
+    // 부모 클래스에서 초기화한 변수
+    int a = 10;
 
     // 생성자
     public ParentClass(int code, int commit) {
