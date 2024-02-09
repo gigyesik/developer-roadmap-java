@@ -8,7 +8,7 @@ import java.net.URL;
 public class HttpUrlConnectionTest {
     public static void main(String[] args) throws IOException {
         // 요청 경로
-        URL url = new URL("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY");
+        URL url = new URL("http://localhost:8080");
 
         // 연결
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
