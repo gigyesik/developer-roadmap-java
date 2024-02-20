@@ -1,4 +1,4 @@
-package advanced;
+package advanced.collectionFramework;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

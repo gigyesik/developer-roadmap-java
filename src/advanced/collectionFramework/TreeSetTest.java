@@ -1,15 +1,15 @@
-package advanced;
+package advanced.collectionFramework;
 
 import java.util.Iterator;
-import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
-public class LinkedHashSetTest {
+public class TreeSetTest {
     public static void main(String[] args) {
-        LinkedHashSet<String> set = new LinkedHashSet<>();
-        set.add("a");
+        TreeSet<String> set = new TreeSet<>();
         set.add("b");
-        set.add("c");
+        set.add("a");
         set.add("d");
+        set.add("c");
 
         Iterator<String> iterator = set.iterator();
 

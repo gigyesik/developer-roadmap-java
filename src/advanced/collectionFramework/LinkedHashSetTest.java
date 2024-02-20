@@ -1,11 +1,11 @@
-package advanced;
+package advanced.collectionFramework;
 
-import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 
-public class HashSetTest {
+public class LinkedHashSetTest {
     public static void main(String[] args) {
-        HashSet<String> set = new HashSet<>();
+        LinkedHashSet<String> set = new LinkedHashSet<>();
         set.add("a");
         set.add("b");
         set.add("c");

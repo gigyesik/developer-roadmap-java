@@ -1,15 +1,15 @@
-package advanced;
+package advanced.collectionFramework;
 
+import java.util.HashSet;
 import java.util.Iterator;
-import java.util.TreeSet;
 
-public class TreeSetTest {
+public class HashSetTest {
     public static void main(String[] args) {
-        TreeSet<String> set = new TreeSet<>();
-        set.add("b");
+        HashSet<String> set = new HashSet<>();
         set.add("a");
-        set.add("d");
+        set.add("b");
         set.add("c");
+        set.add("d");
 
         Iterator<String> iterator = set.iterator();
 
