@@ -9,6 +9,7 @@ public class SerializationTest2 implements Serializable {
     static int b;
     int c;
     String d;
+    transient final int e = 40;
 
     public SerializationTest2(int a, int b, int c, String d) {
         this.a = a;
@@ -36,6 +37,7 @@ public class SerializationTest2 implements Serializable {
             System.out.println(serializationTest2.b); // 20
             System.out.println(serializationTest2.c); // 30
             System.out.println(serializationTest2.d); // Test
+            System.out.println(serializationTest2.e); // 40
 
             serializationTest2.b = 50; // static 데이터 변경
         } catch (IOException e) {
@@ -59,6 +61,7 @@ public class SerializationTest2 implements Serializable {
             System.out.println(serializationTest2.b); // 50. static 데이터
             System.out.println(serializationTest2.c); // 30
             System.out.println(serializationTest2.d); // Test
+            System.out.println(serializationTest2.e); // 40
 
         } catch (IOException | ClassNotFoundException e) {
             System.out.println("Not Deserialized");
