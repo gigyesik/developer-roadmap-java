@@ -9,6 +9,8 @@ public class GenericTest4<T> {
         GenericTest4<Integer> intObj = new GenericTest4<>(10);
         System.out.println(intObj.getObj()); // 10
 
+        // GenericTest4<int> iObj = new GenericTest4<int>(22); // primitive type 불가
+
         GenericTest4<String> stObj = new GenericTest4<>("ABC");
         System.out.println(stObj.getObj()); // ABC
 
