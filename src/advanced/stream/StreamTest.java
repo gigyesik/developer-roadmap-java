@@ -26,5 +26,7 @@ public class StreamTest {
         System.out.println(streamTest.streamStringList); // [Stream]
         System.out.println(streamTest.sortedStringList); // [Collection, Reflection, Stream]
         System.out.println(streamTest.streamIntSet); // 2, 4, 5
+        // forEach()
+        streamTest.integerList.stream().forEach(s -> System.out.println(s)); // 1 2 3 4 5
     }
 }
