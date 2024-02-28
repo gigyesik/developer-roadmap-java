@@ -11,9 +11,13 @@ public class StreamTest {
     // filter()
     List<String> streamStringList = stringList.stream().filter(s -> s.startsWith("S")).toList();
 
+    // sorted()
+    List<String> sortedStringList = stringList.stream().sorted().toList();
+
     public static void main(String[] args) {
         StreamTest streamTest = new StreamTest();
-        System.out.println(streamTest.streamIntList); // 1 4 9 16 25
-        System.out.println(streamTest.streamStringList); // Stream
+        System.out.println(streamTest.streamIntList); // [1, 4, 9, 16, 25]
+        System.out.println(streamTest.streamStringList); // [Stream]
+        System.out.println(streamTest.sortedStringList); // [Collection, Reflection, Stream]
     }
 }
