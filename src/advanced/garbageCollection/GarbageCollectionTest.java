@@ -14,5 +14,8 @@ public class GarbageCollectionTest {
         System.out.println(g3);
         g2 = g3;
         System.out.println(g2);
+
+        // Anonymous Object
+        System.out.println(new GarbageCollectionTest());
     }
 }
