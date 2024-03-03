@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaWithGradle.iml" filepath="$PROJECT_DIR$/JavaWithGradle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JavaWithGradle.main.iml" filepath="$PROJECT_DIR$/.idea/modules/JavaWithGradle.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JavaWithGradle.test.iml" filepath="$PROJECT_DIR$/.idea/modules/JavaWithGradle.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/dr-java.iml" filepath="$PROJECT_DIR$/dr-java.iml" />
     </modules>
   </component>
