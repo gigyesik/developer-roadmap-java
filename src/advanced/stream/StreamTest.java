@@ -20,6 +20,9 @@ public class StreamTest {
     // collect()
     Set<Integer> streamIntSet = integerList2.stream().collect(Collectors.toSet());
 
+    // reduce()
+    int odd = integerList.stream().filter(x -> x%2 != 0).reduce(0, (ans, i) -> ans + 1);
+
     public static void main(String[] args) {
         StreamTest streamTest = new StreamTest();
         System.out.println(streamTest.streamIntList); // [1, 4, 9, 16, 25]
@@ -28,5 +31,6 @@ public class StreamTest {
         System.out.println(streamTest.streamIntSet); // 2, 4, 5
         // forEach()
         streamTest.integerList.stream().forEach(s -> System.out.println(s)); // 1 2 3 4 5
+        System.out.println(streamTest.odd); // 3
     }
 }
